@@ -1,0 +1,16 @@
+.dragging::before {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 5px dashed #ffa500;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: 'Drop Here';
+  font-size: 3rem;
+  color: #ffa500;
+  font-weight: 700;
+}
