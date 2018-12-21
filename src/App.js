@@ -104,8 +104,18 @@ class App extends Component {
             <button type="submit" disabled={!isValid || submitting}>Generate</button>
           </form>
           <section>
-            <button aria-label="generated integrity hash" onClick={this.onCopy}>{resource}</button>
+            <span>{resource}</span>
           </section>
+          <div className="operation">
+            <button
+              aria-label="copy generated HTML with integrity"
+              onClick={this.onCopy}
+              className="btn-copy"
+              disabled={!resource}
+            >
+              Copy
+            </button>
+          </div>
         </main>
         <footer>
           <span>© 2018 LaySent.</span>

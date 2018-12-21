@@ -33,7 +33,7 @@
   font-size: 1rem;
 }
 
-.container form button {
+.container form button, .container .btn-copy {
   font-weight: 400;
   text-align: center;
   border: 1px solid #007bff;
@@ -51,13 +51,15 @@
   cursor: pointer;
 }
 
-.container form button:hover {
+.container form button:hover, .container .btn-copy:hover {
   background-color: #0069d9;
   border-color: #0062cc;
 }
 
 .container form button:disabled,
-.container form button:disabled:hover {
+.container form button:disabled:hover,
+.container .btn-copy:disabled,
+.container .btn-copy:disabled:hover {
   cursor: default;
   opacity: 0.65;
   background-color: #007bff;
@@ -74,7 +76,7 @@
   overflow: auto;
 }
 
-.container section button {
+.container section span {
   word-break: break-all;
   background-color: transparent;
   border: none;
@@ -84,6 +86,12 @@
   color: #155724;
   min-height: 140px;
   text-align: left;
+}
+
+.container main .operation {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container footer {
