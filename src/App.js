@@ -74,7 +74,8 @@ class App extends Component {
       url: e.target.value,
     });
   }
-  onSubmit = () => {
+  onSubmit = (e) => {
+    e.preventDefault();
     if (this.state.submitting) return;
     const url = this.state.url.trim();
     if (!url) return;
