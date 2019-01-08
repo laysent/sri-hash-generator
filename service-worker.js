@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sri-hash-generator/precache-manifest.cfc15d9424d9a4188e76d274dda6932b.js"
+  "/sri-hash-generator/precache-manifest.288ee8a96337a58b8ad120c6ab598275.js"
 );
 
 workbox.clientsClaim();
